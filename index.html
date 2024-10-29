@@ -11,7 +11,7 @@
     <header class="header">
         <div>
             <p class="head">
-                <img src="photo/kartinka.png" width="40" height="40" />
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREd-MXqLbhc2UoH04eOwGTzP1lLZEuFsheMS3JBe__Mv3PlsBR" width="40" height="40" />
                 Nomad list
             </p>
             <p class="podzagolowok">
@@ -27,15 +27,20 @@
 
    
     <dialog id="city-dialog">
-        <div id="dialog-content">
-            <img id="dialog-city-image" alt="City Image" style="width: 100%; height: auto;" />
-            <h2 id="dialog-city-name"></h2>
-            <ul id="dialog-stats"></ul>
+        <div class="dialog-container">
             <button id="close-dialog">X</button>
+            <img id="dialog-city-image" alt="City Image" class="dialog-image" />
+            <div class="dialog-details">
+                <h2 id="dialog-city-name" class="dialog-city-name"></h2>
+                <div class="dialog-tags">
+                    <span id="dialog-tags"></span>
+                    <span id="dialog-score" class="dialog-score"></span>
+                </div>
+                <ul id="dialog-stats" class="dialog-stats"></ul>
+            </div>
         </div>
     </dialog>
     
-    </dialog>
 
   
     <script src="script.js" defer></script>
